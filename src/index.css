@@ -39,12 +39,29 @@ textarea {
 
 .hero-section {
   display: grid;
-  gap: 32px;
+  grid-template-columns: 1fr minmax(320px, 440px);
+  gap: 40px;
   padding: 40px 0 56px;
+  align-items: start;
 }
 
 .hero-copy {
   max-width: 680px;
+  animation: slideIn 1.1s ease-out;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-panel {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  max-width: 780px;
+  align-items: start;
 }
 
 .eyebrow {
@@ -98,11 +115,6 @@ textarea {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: #eef2ff;
-}
-
-.hero-card {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .summary-card {
