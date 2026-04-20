@@ -1,0 +1,23 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#22C55E" />
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A5B4FC" />
+      <stop offset="100%" stop-color="#4ADE80" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" rx="80" fill="url(#bg)" />
+  <circle cx="300" cy="210" r="128" fill="#0F172A" opacity="0.95" />
+  <circle cx="300" cy="210" r="120" fill="black" opacity="0.6" />
+  <path d="M214 336C214 274.745 264.745 224 326 224C387.255 224 438 274.745 438 336V348H214V336Z" fill="#E0E7FF" opacity="0.85" />
+  <path d="M354 352H246C220 352 198 374 198 400V412C198 438 220 460 246 460H354C380 460 402 438 402 412V400C402 374 380 352 354 352Z" fill="#E0E7FF" opacity="0.75" />
+  <circle cx="300" cy="210" r="92" fill="url(#ring)" opacity="0.22" />
+  <path d="M178 118C178 96.9086 194.909 80 216 80H384C405.091 80 422 96.9086 422 118V160H178V118Z" fill="#fff" opacity="0.08" />
+  <circle cx="300" cy="210" r="72" fill="#C7D2FE" />
+  <text x="300" y="160" text-anchor="middle" fill="#0F172A" font-size="56" font-weight="700" font-family="Inter, sans-serif">VG</text>
+  <text x="300" y="310" text-anchor="middle" fill="#E0E7FF" font-size="20" font-weight="600" font-family="Inter, sans-serif">Full Stack</text>
+  <text x="300" y="338" text-anchor="middle" fill="#E0E7FF" font-size="20" font-weight="600" font-family="Inter, sans-serif">Developer</text>
+</svg>
