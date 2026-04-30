@@ -279,6 +279,19 @@ function ExperienceSection() {
 
       <div style={{ position: "relative", paddingLeft: "2.5rem" }}>
         <div style={{ position: "absolute", left: 0, top: 8, bottom: 0, width: 1, background: "rgba(255,255,255,0.07)" }} />
+          <ExpItem
+  role="Senior Software Engineer (Fullstack)"
+  period="Feb 2026 – Present"
+  company="HTC Global Services · Hyderabad · Insurance Domain"
+  accentColor="#38bdf8"
+  glowColor="rgba(56,189,248,0.5)"
+  bullets={[
+    "Developing and maintaining full-stack features for AmFam (American Family Insurance) client across React frontend and Node.js BFF (Backend-for-Frontend) layer",
+    "Built and consumed RESTful APIs through a dedicated BFF layer, decoupling frontend concerns from downstream microservices",
+    "Implemented structured logging and observability using Datadog, enabling real-time monitoring, alerting, and production issue resolution",
+    "Collaborated in Agile sprints delivering insurance domain features with a focus on reliability and scalability",
+  ]}
+/>
         <ExpItem
           role="Software Engineer II (SDE-2)"
           period="Jan 2025 – Feb 2026"
@@ -335,8 +348,8 @@ function ContactSection({ onCursorEnter, onCursorLeave }: CursorHandlers) {
         {[
           { href: "mailto:vaidehig94@gmail.com",            label: "vaidehig94@gmail.com" },
           { href: "tel:+918309803518",                      label: "+91 8309803518" },
-          { href: "https://linkedin.com/in/vaidehi-goruputi", label: "LinkedIn", target: "_blank" },
-          { href: "https://github.com/vaidehi-goruputi",    label: "GitHub",    target: "_blank" },
+          { href: "https://www.linkedin.com/in/vaidehi-goruputi-401888169", label: "LinkedIn", target: "_blank" },
+          { href: "https://github.com/vaidehisai",    label: "GitHub",    target: "_blank" },
         ].map((link, i) => (
           <a key={i} href={link.href} target={link.target} rel={link.target ? "noreferrer" : undefined}
             onMouseEnter={onCursorEnter} onMouseLeave={onCursorLeave}
