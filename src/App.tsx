@@ -236,7 +236,7 @@ function WorkSection() {
   const p1 = useRevealProps(0.1);
   return (
     <section id="work" style={{ padding: "7rem 8vw", position: "relative", zIndex: 2 }}>
-      <motion.div {...p0} style={{ fontFamily: "'DM Mono', monospace", fontSize: ".72rem", color: "#38bdf8", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}>// selected work</motion.div>
+      <motion.div {...p0} style={{ fontFamily: "'DM Mono', monospace", fontSize: ".72rem", color: "#38bdf8", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}>work/Projects</motion.div>
       <motion.h2 {...p1} style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(2rem,4vw,3rem)", fontWeight: 800, letterSpacing: "-.03em", marginBottom: "3rem" }}>What I've Built</motion.h2>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
         {PROJECTS.map((p, i) => <ProjectCard key={i} {...p} />)}
@@ -250,7 +250,7 @@ function SkillsSection() {
   const p1 = useRevealProps(0.1);
   return (
     <section id="skills" style={{ padding: "7rem 8vw", background: "#0d1117", borderTop: "1px solid rgba(255,255,255,0.07)", borderBottom: "1px solid rgba(255,255,255,0.07)", position: "relative", zIndex: 2 }}>
-      <motion.div {...p0} style={{ fontFamily: "'DM Mono', monospace", fontSize: ".72rem", color: "#38bdf8", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}>// technical skills</motion.div>
+      <motion.div {...p0} style={{ fontFamily: "'DM Mono', monospace", fontSize: ".72rem", color: "#38bdf8", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}>technical skills</motion.div>
       <motion.h2 {...p1} style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(2rem,4vw,3rem)", fontWeight: 800, letterSpacing: "-.03em", marginBottom: "3rem" }}>My Stack</motion.h2>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.5rem" }}>
         {SKILLS.map((s, i) => <SkillGroup key={i} {...s} />)}
@@ -265,7 +265,7 @@ function ExperienceSection() {
   const p2 = useRevealProps(0.15);
   return (
     <section id="experience" style={{ padding: "7rem 8vw", position: "relative", zIndex: 2 }}>
-      <motion.div {...p0} style={{ fontFamily: "'DM Mono', monospace", fontSize: ".72rem", color: "#38bdf8", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}>// career timeline</motion.div>
+      <motion.div {...p0} style={{ fontFamily: "'DM Mono', monospace", fontSize: ".72rem", color: "#38bdf8", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}> career timeline</motion.div>
       <motion.h2 {...p1} style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(2rem,4vw,3rem)", fontWeight: 800, letterSpacing: "-.03em", marginBottom: "2.5rem" }}>Experience</motion.h2>
 
       <motion.div {...p2} style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", marginBottom: "3rem" }}>
@@ -336,13 +336,13 @@ function ContactSection({ onCursorEnter, onCursorLeave }: CursorHandlers) {
   const p3 = useRevealProps(0.2);
   return (
     <section id="contact" style={{ padding: "7rem 8vw", textAlign: "center", background: "#0d1117", borderTop: "1px solid rgba(255,255,255,0.07)", position: "relative", zIndex: 2 }}>
-      <motion.div {...p0} style={{ fontFamily: "'DM Mono', monospace", fontSize: ".72rem", color: "#38bdf8", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}>// get in touch</motion.div>
+      <motion.div {...p0} style={{ fontFamily: "'DM Mono', monospace", fontSize: ".72rem", color: "#38bdf8", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}>get in touch</motion.div>
       <motion.h2 {...p1} style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(2.5rem,5vw,4rem)", fontWeight: 800, letterSpacing: "-.04em", marginBottom: "1rem" }}>
         Let's Build
         <span style={{ display: "block", background: "linear-gradient(135deg,#38bdf8,#818cf8)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Something Great</span>
       </motion.h2>
       <motion.p {...p2} style={{ fontSize: "1rem", color: "#64748b", maxWidth: 480, margin: "0 auto 2.5rem", lineHeight: 1.8 }}>
-        Actively looking for opportunities at product-based companies. Full-stack, frontend, or system design — let's talk.
+        Actively looking for opportunities Full-stack, frontend, or system design — let's talk.
       </motion.p>
       <motion.div {...p3} style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }}>
         {[
@@ -380,7 +380,6 @@ const GLOBAL_CSS = `
   nav { animation: slideDown .6s ease both; }
 `;
 
-// ── App ────────────────────────────────────────────────────────────────────────
 export default function App() {
   const cursorRef = useRef<HTMLDivElement>(null);
   const ringRef   = useRef<HTMLDivElement>(null);
@@ -469,7 +468,7 @@ export default function App() {
           <motion.div variants={stagger(0.2)} initial="hidden" animate="show">
             <motion.div variants={fadeUp} style={{ display: "inline-flex", alignItems: "center", gap: ".5rem", padding: ".35rem 1rem", borderRadius: 100, border: "1px solid rgba(56,189,248,0.25)", background: "rgba(56,189,248,0.06)", fontSize: ".76rem", letterSpacing: ".1em", textTransform: "uppercase", color: "#38bdf8", marginBottom: "1.5rem" }}>
               <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#34d399", display: "inline-block", animation: "pulse 2s infinite" }} />
-              Open to Product Companies
+              Available for New Roles
             </motion.div>
 
             <motion.h1 variants={fadeUp} style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(3rem, 7vw, 5.5rem)", fontWeight: 800, lineHeight: 1, letterSpacing: "-.04em" }}>
@@ -507,7 +506,7 @@ export default function App() {
                 <div style={{ fontSize: ".78rem", color: "#64748b", letterSpacing: ".1em" }}>SDE-2 · Hyderabad</div>
               </div>
             </div>
-            <StatPill val="5+"  label="Yrs React" color="blue"   style={{ top: -10,  right: -30 }} />
+            <StatPill val="5+"  label="Yrs React/2+Node Stack" color="blue"   style={{ top: -10,  right: -30 }} />
             <StatPill val="25%" label="Perf Gain" color="green"  style={{ bottom: 30, left: -40 }} />
             <StatPill val="K8s" label="Deployed"  color="purple" style={{ bottom: -10, right: -20 }} />
           </div>
